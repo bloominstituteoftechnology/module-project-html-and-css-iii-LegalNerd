@@ -56,20 +56,71 @@
     */
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
+    /* 👉 Task 1 */
+#flexContainer1 {
+  display: flex; /* Set the flex container */
+}
+
 
     /* 👉 Task 2 - [HINT] the flex container needs to change direction */
+    /* 👉 Task 2 */
+#flexContainer1 {
+  flex-direction: column; /* Change the flex container direction */
+}
+
 
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
+    /* 👉 Task 3 */
+#flexContainer1 {
+  flex-direction: column-reverse; /* Reverse the flex container direction */
+}
+
 
     /* 👉 Task 4 - [HINT] the flex items need a new order */
+    /* 👉 Task 4 */
+#flexContainer1 {
+  flex-direction: row; /* Reset the flex container direction to row */
+}
+
+.flexItem:nth-child(1) {
+  order: 3; /* Set the order for the first flex item */
+}
+.flexItem:nth-child(2) {
+  order: 1; /* Set the order for the second flex item */
+}
+.flexItem:nth-child(3) {
+  order: 2; /* Set the order for the third flex item */
+}
+
 
     /* 👉 Task 5 - [HINT] research align-self */
+    /* 👉 Task 5 */
+.flexItem:nth-child(2) {
+  align-self: flex-end; /* Align the second flex item to the flex container's end */
+}
+
 
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
+    /* 👉 Task 6 */
+.flexItem {
+  display: flex; /* Make flex items flex containers */
+  align-items: center; /* Align items in the cross axis (vertically) */
+}
+
 
     /* 👉 Task 7 - [HINT] research flex-grow */
+    /* 👉 Task 7 */
+.flexItem:nth-child(3) {
+  flex-grow: 2; /* Allow the third flex item to grow more than others */
+}
+
 
     /* 👉 Task 8 - [HINT] you got this! */
+    /* 👉 Task 8 */
+#flexContainer1 {
+  justify-content: space-between; /* Space items evenly with extra space before the first and after the last */
+}
+
 
 
     /*
@@ -77,6 +128,23 @@
     Revisit the Module Project of HTML & CSS II and re-style it using Flexbox.
     Prior to starting, remove the "inline-block" declarations, which were a workaround to make divs fall in rows.
     */
+
+    /* Remove inline-block declarations */
+.some-class {
+  display: inline-block;
+}
+/* Use Flexbox properties */
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  align-items: center; /* Adjust as needed */
+}
+
+.flex-item {
+  flex-grow: 1; /* Adjust as needed */
+  /* Add other flex properties as needed */
+}
+
 
     /* ❗ 👉 WORK ABOVE THIS LINE! */
     /* ❗ 👉 WORK ABOVE THIS LINE! */
